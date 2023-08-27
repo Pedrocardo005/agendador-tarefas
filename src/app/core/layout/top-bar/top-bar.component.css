@@ -1,9 +1,16 @@
 header {
-    background-color: blue;
+    background-color: #2637D0;
     color: white;
     display: flex;
+    justify-content: center;
+    gap: 25%;
 }
 
 a {
     color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
