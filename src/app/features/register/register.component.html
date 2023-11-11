@@ -1,19 +1,19 @@
-<form>
+<form [formGroup]="applyForm" (submit)="submitApplication()">
     <div>
         <label for="nome">Nome:</label>
-        <input name="nome" type="text" id="nome" />
+        <input name="nome" type="text" id="nome" formControlName="nome" />
     </div>
     <div>
         <label for="prioridade">Prioridade:</label>
-        <input name="prioridade" type="text" id="prioridade" />
+        <input name="prioridade" type="text" id="prioridade" formControlName="prioridade" />
     </div>
     <div>
         <label>Início:</label>
-        <input name="inicio" type="date" id="inicio" />
+        <input name="inicio" type="date" id="inicio" formControlName="inicio" />
     </div>
     <div>
         <label>Conclusão:</label>
-        <input name="conclusao" type="date" id="conclusao" />
+        <input name="conclusao" type="date" id="conclusao" formControlName="conclusao" />
     </div>
     <button type="submit">Salvar</button>
 </form>
